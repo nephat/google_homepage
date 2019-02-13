@@ -5,16 +5,39 @@
 </head>
 <body>
   <script>
-     // Your JavaScript goes here!
+     // function of adding two numbers
 function add7 (x,y){
 
   return x+y;
 }
-
+//function of multiplying two numbers
 function multiply(a,z){
 
   return a*z;
 }
+
+// Capitalizing all first letters in a sentence.
+function capitalize_Words(str)
+{
+ return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
+// Capitalizing only the first letter in a sentence.
+
+capitalize = function(str1){
+  return str1.charAt(0).toUpperCase() + str1.slice(1);
+}
+
+
+
+
+
+    
+console.log(capitalize_Words('my first capitalization in javascript'));//My First Capitalization In Javascript   
+console.log(capitalize('my first capitalization in javascript'));//My first capitalization in javascript
+
+
+
 
 console.log(add7(2, 3));      // 5
 console.log(add7(-1, 1));     // 0
@@ -23,7 +46,7 @@ console.log(multiply(51, 100));      // 5
 console.log(multiply(50, 70));
  
 console.log(add7(1, 1, 1));
-console.log("Hello, World!")
+
   </script>
 </body>
 </html>
